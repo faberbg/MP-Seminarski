@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748172, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -675,6 +675,11 @@ MonoBehaviour:
   SecondDisplay: {fileID: 1910458574}
   MiliDisplay: {fileID: 518358959}
   LapTimeBox: {fileID: 0}
+--- !u!1 &265863138 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100064, guid: 0fb4610dba67fc24cb2a6674fb155fc1, type: 3}
+  m_PrefabInstance: {fileID: 1169398745}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &287039515
 GameObject:
   m_ObjectHideFlags: 0
@@ -2681,7 +2686,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!81 &902256364
 AudioListener:
   m_ObjectHideFlags: 0
@@ -3829,6 +3834,10 @@ PrefabInstance:
       propertyPath: m_Target
       value: 
       objectReference: {fileID: 313478723}
+    - target: {fileID: 11400022, guid: 0fb4610dba67fc24cb2a6674fb155fc1, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 19800000, guid: 0fb4610dba67fc24cb2a6674fb155fc1, type: 3}
       propertyPath: InitialModule.startSizeY.minMaxState
       value: 3
@@ -4505,6 +4514,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CarControl: {fileID: 1641363075}
+  CarControl2: {fileID: 265863138}
 --- !u!4 &1746095674
 Transform:
   m_ObjectHideFlags: 0
