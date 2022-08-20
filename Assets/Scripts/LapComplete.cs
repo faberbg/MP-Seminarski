@@ -13,8 +13,11 @@ public class LapComplete : MonoBehaviour
     public GameObject MiliDisplay;
 
     public GameObject LapTimeBox;
+    public GameObject LapCounter;
+    public int LapsDone;
 
     void OnTriggerEnter(){
+        LapsDone +=1;
         if(LapTimeManager.SecondCount<=9){
              SecondDisplay.GetComponent<TMPro.TextMeshProUGUI> ().text = "0" + LapTimeManager.SecondCount + ".";
         }else{
@@ -22,15 +25,22 @@ public class LapComplete : MonoBehaviour
         }
 
         if(LapTimeManager.MinuteCount<=9){
-             MinuteDisplay.GetComponent<TMPro.TextMeshProUGUI> ().text = "0" + LapTimeManager.MinuteCount + ".";
+             MinuteDisplay.GetComponent<TMPro.TextMeshProUGUI> ().text = "0" + LapTimeManager.MinuteCount + ":";
         }else{
-           MinuteDisplay.GetComponent<TMPro.TextMeshProUGUI> ().text = "" + LapTimeManager.MinuteCount + ".";
+           MinuteDisplay.GetComponent<TMPro.TextMeshProUGUI> ().text = "" + LapTimeManager.MinuteCount + ":";
         }
 
         MiliDisplay.GetComponent<TMPro.TextMeshProUGUI> ().text = "" + LapTimeManager.MiliCount;
+
+        PlayerPrefs.SetInt ("MinSave", LapTimeManager.MinuteCount);
+        PlayerPrefs.SetInt ("SecSave", LapTimeManager.SecondCount);
+        PlayerPrefs.SetFloat("MiliSave",LapTimeManager.MiliCount);
+
+
         LapTimeManager.MinuteCount=0;
         LapTimeManager.SecondCount=0;
         LapTimeManager.MiliCount=0;
+        LapCounter.GetComponent<TMPro.TextMeshProUGUI>().text= "" + LapsDone;
 
         HalfLapTrig.SetActive(true);
         LapCompleteTrig.SetActive(false);

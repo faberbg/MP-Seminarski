@@ -10,6 +10,7 @@ public class Countdown : MonoBehaviour
     public AudioSource LetsGo;
     public GameObject LapTimer;
     public GameObject CarControls;
+    public AudioSource LevelMusic;
 
 
     // makakjakakh
@@ -37,6 +38,7 @@ public class Countdown : MonoBehaviour
         yield return new WaitForSeconds(1);
         CountDown.SetActive(false);
         LetsGo.Play();
+        LevelMusic.Play();
         LapTimer.SetActive(true);
         CarControls.SetActive(true);
 
