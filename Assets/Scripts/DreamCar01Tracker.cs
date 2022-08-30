@@ -98,7 +98,7 @@ public class DreamCar01Tracker : MonoBehaviour
                 MarkTracker = 0;
             }
         }
-        yield return new WaitForSeconds (1);
+        yield return new WaitForSeconds (0.3f);
         this.GetComponent<BoxCollider>().enabled = true;
     }
 }

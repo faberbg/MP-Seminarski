@@ -23,6 +23,10 @@ public class ButtonOption : MonoBehaviour
     SceneManager.LoadScene(3);
    }
 
+   public void Credits (){
+    SceneManager.LoadScene(4);
+   }
+
 
 }
 
