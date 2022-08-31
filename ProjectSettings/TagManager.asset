@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Fire
   - DreamCar01
+  - CarPos
+  - CarPos1
   layers:
   - Default
   - TransparentFX

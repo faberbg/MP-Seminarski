@@ -9,22 +9,22 @@ public class ButtonOption : MonoBehaviour
    // SceneManager.LoadScene(2);
    //}
    public void TrackSelect(){
-    SceneManager.LoadScene(1);
+    SceneManager.LoadScene(2);
    }
    public void MainMenu(){
-    SceneManager.LoadScene(0);
+    SceneManager.LoadScene(1);
    }
 
    public void Track01 (){
-    SceneManager.LoadScene(2);
-   }
-
-   public void Track02 (){
     SceneManager.LoadScene(3);
    }
 
-   public void Credits (){
+   public void Track02 (){
     SceneManager.LoadScene(4);
+   }
+
+   public void Credits (){
+    SceneManager.LoadScene(5);
    }
 
 

@@ -13,6 +13,7 @@ public class ModeScore : MonoBehaviour
     public int InternalScore;
     public GameObject ScoreValue;
     public GameObject ScoreObjects;
+    public GameObject RaceFinish;
 
     void Start()
     {
@@ -28,6 +29,9 @@ public class ModeScore : MonoBehaviour
     void Update(){
         InternalScore = CurrentScore;
          ScoreValue.GetComponent<TMPro.TextMeshProUGUI> ().text = "" + InternalScore;
+        if (CurrentScore==500){
+            RaceFinish.SetActive(true);
+        }
     }
     
 }

@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/SlashScreen.unity
+    guid: aad8cc8b1ac5dad49896800994ec357e
+  - enabled: 1
     path: Assets/MainMenu.unity
     guid: 978d60d9db91e6845b8240757fdd6c82
   - enabled: 1
