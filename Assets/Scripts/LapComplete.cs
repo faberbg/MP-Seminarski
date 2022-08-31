@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class LapComplete : MonoBehaviour
 {
@@ -20,9 +21,18 @@ public class LapComplete : MonoBehaviour
     public GameObject RaceFinish;
 
     void Update(){
-        if (LapsDone==2){
+        if (LapsDone==0){
             RaceFinish.SetActive(true);
+           // StartCoroutine(ToMenu());
         }
+        
+    }
+   
+   IEnumerator ToMenu(){
+        
+        yield return new WaitForSeconds(3);
+        ButtonOption b = new ButtonOption();
+        b.TrackSelect();
     }
 
    
