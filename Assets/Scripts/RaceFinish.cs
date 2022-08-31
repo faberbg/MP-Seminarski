@@ -14,6 +14,11 @@ public class RaceFinish : MonoBehaviour
     public AudioSource FinishMusic;
 
     void OnTriggerEnter(){
+        if(ModeTime.isTimeMode == true){
+            //trka vreme
+
+        }else{
+
         this.GetComponent<BoxCollider>().enabled=false;
         MyCar.SetActive (false);
         CompleteTrig.SetActive(false);
@@ -25,6 +30,10 @@ public class RaceFinish : MonoBehaviour
         LevelMusic.SetActive(false);
         ViewModes.SetActive(false);
         FinishMusic.Play ();
+        GlobalCash.TotalCash += 100;
+        PlayerPrefs.SetInt("SavedCash", GlobalCash.TotalCash);
+        }
+        
         
     }
 }

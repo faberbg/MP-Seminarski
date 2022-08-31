@@ -8,7 +8,7 @@ public class CameraCange : MonoBehaviour
     public GameObject FarCam;
     public GameObject FPCam;
     public int CamMode;
-
+    
     void Update()
     {
         if(Input.GetButtonDown("ViewMode")){
