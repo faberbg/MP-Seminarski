@@ -21,7 +21,7 @@ public class LapComplete : MonoBehaviour
     public GameObject RaceFinish;
 
     void Update(){
-        if (LapsDone==0){
+        if (LapsDone==3){
             RaceFinish.SetActive(true);
            // StartCoroutine(ToMenu());
         }

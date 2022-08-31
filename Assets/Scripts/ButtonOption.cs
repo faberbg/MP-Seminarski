@@ -27,6 +27,9 @@ public class ButtonOption : MonoBehaviour
    public void Credits (){
     SceneManager.LoadScene(5);
    }
+   public void doExitGame() {
+     Application.Quit();
+ }
 
 
 }

@@ -31,7 +31,7 @@ public class ModeScore : MonoBehaviour
     void Update(){
         InternalScore = CurrentScore;
          ScoreValue.GetComponent<TMPro.TextMeshProUGUI> ().text = "" + InternalScore;
-        if (InternalScore>=150){
+        if (InternalScore>=500){
             RaceFinish.SetActive(true);
             StartCoroutine(ToMenu());
         }
