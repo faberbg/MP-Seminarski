@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44470465, g: 0.62324363, b: 0.72069067, a: 1}
+  m_IndirectSpecularColor: {r: 0.44221637, g: 0.6198857, b: 0.7168428, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -969,6 +969,7 @@ GameObject:
   m_Component:
   - component: {fileID: 582320434}
   - component: {fileID: 582320433}
+  - component: {fileID: 582320435}
   m_Layer: 0
   m_Name: CarButtons
   m_TagString: Untagged
@@ -988,7 +989,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e93052a5ed75864a978454988d23339, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TrackWindow: {fileID: 2004207882}
 --- !u!4 &582320434
 Transform:
   m_ObjectHideFlags: 0
@@ -1004,6 +1004,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &582320435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 582320432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4664177333c620f4eb5e327e4c0021e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TrackWindow: {fileID: 2004207882}
 --- !u!1 &633312214
 GameObject:
   m_ObjectHideFlags: 0
@@ -1499,7 +1512,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 582320433}
+      - m_Target: {fileID: 582320435}
         m_TargetAssemblyTypeName: GlobalCar, Assembly-CSharp
         m_MethodName: RedCar
         m_Mode: 1
@@ -3393,9 +3406,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 582320433}
+      - m_Target: {fileID: 582320435}
         m_TargetAssemblyTypeName: GlobalCar, Assembly-CSharp
-        m_MethodName: BlueCar
+        m_MethodName: WhiteCar
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
